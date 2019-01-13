@@ -1,44 +1,19 @@
 module.exports = function(sequelize,DataType){
-	return sequelize.define('tblbtcdebit',{
+	return sequelize.define('DB_Test',{
 		id : {
 			type : DataType.DOUBLE,
 			allowNull : false,
 			primaryKey : true
 		},
-		userId : {
-			type : DataType.DOUBLE,
-			allowNull : false,
-		},
-		btc_address : {
+		name : {
 			type : DataType.STRING,
-			allowNull : false,
+			allowNull : true,
 		},
-		recieved_amount : {
+		email : {
 			type : DataType.STRING,
-			allowNull : false
-		},
-		status : {
-			type : DataType.STRING,
-			allowNull : false
-		},
-		created_at : {
-			type : DataType.STRING,
-			allowNull : false
-		},
-		expiry : {
-			type : DataType.STRING,
-			allowNull : false,
-		},
-		last_Updated_at : {
-			type : DataType.STRING,
-			allowNull : false
-		},
-		is_cancel : {
-			type : DataType.DOUBLE,
-			allowNull : true
+			allowNull : true,
 		}
-
 	},{
-		tableName : "tblbtcdebit"
+		tableName : "DB_Test"
 	});
 }

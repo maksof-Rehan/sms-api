@@ -10,7 +10,6 @@ var router = function(){
 
 	accrouter.route('/login')
         .get(function (req, res) {
-            console.log("reached in router file");
             return sampleController.sampleFunction(req,res)
         });
 
