@@ -25,19 +25,19 @@ app.use('/test',sampleRoutes);
 
 app.use(express.static('app'));
 
-app.get("/test/testApi",function(req,res){
+app.get("/testNode",function(req,res){
 	res.send({
-		res : "sequelize"
+		res : "Hello World! new "
 	});
 });
 
-
-sequelize.authenticate().then(() => {
-	console.log("connection has been established sucessfully");
 	app.listen(port , function(err){
 		if(err) console.log(err);
 		console.log("port runnig on",port);
 	})
-}).catch(error => {
-	console.log("Unable to connect database " ,port);
-});
+
+// sequelize.authenticate().then(() => {
+// 	console.log("connection has been established sucessfully");
+// }).catch(error => {
+// 	console.log("Unable to connect database " ,port);
+// });
