@@ -31,13 +31,13 @@ app.get("/testNode",function(req,res){
 	});
 });
 
+
+sequelize.authenticate().then(() => {
 	app.listen(port , function(err){
 		if(err) console.log(err);
 		console.log("port runnig on",port);
 	})
-
-// sequelize.authenticate().then(() => {
-// 	console.log("connection has been established sucessfully");
-// }).catch(error => {
-// 	console.log("Unable to connect database " ,port);
-// });
+	console.log("connection has been established sucessfully");
+}).catch(error => {
+	console.log("Unable to connect database " ,port);
+});

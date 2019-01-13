@@ -1,9 +1,9 @@
 var Sequelize = require('sequelize');
 
 // sequelize = new Sequelize('database Name','database username','database pass',{
-sequelize = new Sequelize('id7989057_smsapi','id7989057_rehan102','Rehan@123',{
+sequelize = new Sequelize('sql12273980','sql12273980','WzBfclbhKU',{
 	// host : 'host name',
-	host : 'https://databases-auth.000webhost.com',
+	host : 'sql12.freemysqlhosting.net',
 	port : 3306,
 	dialect : 'mysql',
 	dialectOptions : { 
