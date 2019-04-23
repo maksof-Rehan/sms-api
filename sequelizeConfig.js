@@ -1,11 +1,11 @@
 var Sequelize = require('sequelize');
 
 // sequelize = new Sequelize('database Name','database username','database pass',{
-sequelize = new Sequelize('sql12273980','sql12273980','WzBfclbhKU',{
+sequelize = new Sequelize('sms_api','postgres','root',{
 	// host : 'host name',
-	host : 'sql12.freemysqlhosting.net',
-	port : 3306,
-	dialect : 'mysql',
+	host : 'localhost',
+	port : 5432,
+	dialect : 'postgres',
 	dialectOptions : { 
 		timeout : 3000 
 	},

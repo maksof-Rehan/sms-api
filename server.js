@@ -26,8 +26,10 @@ app.use('/test',sampleRoutes);
 app.use(express.static('app'));
 
 app.get("/testNode",function(req,res){
-	res.send({
-		res : "Hello World! new "
+	sequelize.query('select * from DB_User').then(function(result){
+		res.send({
+			res : result
+		});
 	});
 });
 

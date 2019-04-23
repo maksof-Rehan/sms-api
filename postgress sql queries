@@ -1,0 +1,15 @@
+(1) this command for enter database 
+		psql -U postgres
+(2) this command for change database
+	\c sms_api 
+
+CREATE TABLE DB_User(
+	id int primary key not null,
+	firstName char(50),
+	lastName char(50),
+	email char(50),
+	appKey char(150),
+	createdAt date,
+	updatedAr date,
+	isDeleted boolean
+);
